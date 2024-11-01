@@ -1,0 +1,89 @@
+/*
+ * wp247 Extension Notification System Client CSS
+*/
+.wp247xns-client-notice-id { display: none; }
+
+#wp247xns_client_blackout {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.75);
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+	display: none;
+}
+
+#wp247xns_client_dialog {
+    height: auto;
+    position: fixed;
+    top: 10vh;
+    left: 10vw;
+	max-height: 80vh;
+    min-width: 300px;
+	width: 80vw;
+    background-color: #fff;
+    z-index: 99999;
+    padding: 0 0 20px 0;
+	display: none;
+}
+
+#wp247xns_client_close {
+	float: right;
+	color: #72777c;
+}
+
+#wp247xns_client_close:hover {
+	color: #0073aa;
+}
+
+.wp247xns-client-extension-status {
+	margin-right: 4px;
+}
+
+.wp247xns-client-extension-status-table {
+	height: 100%;
+	width: 100%;
+	padding-right: 8px;
+	max-height: calc(80vh - 68px);
+	overflow: auto;
+}
+
+.wp247xns-client-extension-status-table table {
+	border-collapse: collapse;
+	margin-right: 4px;
+}
+
+/*
+.wp247xns-client-extension-status-table tr {
+	outline: 1px solid #f2f2f2;
+}
+ */
+
+.wp247xns-client-extension-status-table th {
+	min-width: 120px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	text-align: left;
+	vertical-align: top;
+	line-height: 1.1em;
+	font-weight: 600;
+	border-top: 1px solid #f2f2f2;
+	border-bottom: 1px solid #f2f2f2;
+}
+
+.wp247xns-client-extension-status-table td {
+	text-align: left;
+	padding-left: 16px;
+	padding-right: 8px;
+	border-top: 1px solid #f2f2f2;
+	border-bottom: 1px solid #f2f2f2;
+}
+
+.wp247xns-client-extension-status-table td pre {
+	margin-top: 6px;
+}
+
+span.wp247xns-client-is-perm-dismissible:hover {
+	cursor: pointer;
+	color: #c00;
+}
